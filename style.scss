@@ -1,0 +1,210 @@
+// Big important variables
+$imageHeight: 360px;
+$imageWidth: 360px;
+$corners: 6px;
+
+@mixin prefix($prop, $val) { // show vendor prefixes
+	-moz-#{$prop}: $val;
+	-webkit-#{$prop}: $val;
+	#{$prop}: $val;
+}
+@mixin gradient($grad...) {
+	background-image: $grad;
+	background-image: -o-$grad;
+	background-image: -moz-$grad;
+	background-image: -webkit- + '' + $grad;
+	background-image: -ms-$grad;
+}
+@mixin clear { // auto-clear floats
+	&:after {
+		clear: both;
+		content: ' ';
+		display: block;
+		visibility: hidden;	
+	}
+}
+@mixin size($s) { // responsiveness-osity
+	@if $s == m-portrait { // e.g. mobile in portrait orientation
+	    @media (max-width: $imageWidth) and (orientation: portrait) { @content; }
+	}
+	@if $s == m-landscape { // e.g. mobile in landscape
+		@media (max-height: $imageHeight) and (orientation: landscape) { @content; }
+	}
+	@if $s == mini { // applies to both above
+		@media (max-width: $imageWidth) { @content; }
+		@media (max-height: $imageHeight) { @content; }
+	}
+	@if $s == small {
+		@media (max-width: 799px) and (min-width: $imageWidth+1)
+			and (min-height: $imageHeight+1) { @content; }
+	}
+	@if $s == normal {
+		@media (min-width: 800px) { @content; }
+	}
+}
+
+
+
+body {
+	background: #c0cfd9;
+	margin: 5em auto;
+	@include size(small) {margin: 0 auto};
+	@include size(mini) {margin: 0};
+	
+	color: #222;
+	font: 400 italic 15px 'Source Sans Pro';
+}
+
+a {
+	&:link, &:visited {
+		color: #00649d;
+		text-decoration: underline;
+	}
+	
+	&:active {
+		color: #003f69;
+	}
+
+}
+
+
+article {
+	
+	margin: 5em;
+	position: absolute;
+	top: 50%;
+	margin-top: -($imageHeight + 75px) / 2;
+	
+	@include size(small) {
+		left: 50%;
+		margin-right: 0;
+		margin-left: -($imageWidth) / 2;
+		margin-top: 5em;
+		top: auto;
+		width: $imageWidth;
+	}
+	@include size(mini) {
+		top: 0;
+		left: 0;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+	@include prefix(border-radius, $corners);
+	@include clear;
+	
+	
+	#image { // avatar container
+		
+		width: $imageWidth;
+		position: relative;
+		float: left;
+		z-index: 2;
+		@include size(m-portrait) {
+			width: 100%;
+			@include clear;
+		}
+		@include size(m-landscape) {
+			width: 50%;
+			padding-bottom: 50%;
+			position: fixed;
+		}
+	
+		img, #shadow {
+			display: block;
+			@include prefix(border-radius, $corners);
+			@include size(mini) {@include prefix(border-radius, 0);}
+		}
+		
+		img {
+			@include size(m-portrait) {width: 100%; height: auto};
+			@include size(m-landscape) {
+				position: absolute;
+				right: 0;
+			};
+		}	
+		#shadow { // displayed over img
+			position: absolute;
+			top: 0;
+			width: $imageHeight;
+			height: $imageWidth;
+			@include prefix(box-shadow, inset 0px -1px 6px #444);
+			
+			@include size(m-portrait) {
+				width: 100%;
+				height: 100%;
+				bottom: 0;
+				top: auto;
+				@include prefix(box-shadow, none);
+				@include gradient(linear-gradient(bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 15%));
+			}
+			@include size(m-landscape) {
+				width: 100%;
+				height: 100%;
+				@include prefix(box-shadow, none);
+				@include gradient(linear-gradient(right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 15%));
+			}
+
+		}
+	}
+	
+	#description { // text container
+		padding: 0 1em;
+		width: 18em;
+		height: $imageHeight;
+		overflow: visible;
+		float: left;
+		display: block;
+		z-index: 4;
+		@include clear;
+		@include size(small) {
+			clear: left;
+			margin-bottom: 5em;
+		}
+		@include size(mini) {
+			height: auto;
+			width: auto;
+			/* float: none; */
+			margin-bottom: 2em;
+		}
+		@include size(m-portrait) {
+			
+		}
+		@include size(m-landscape) {
+			margin-left: 50%;
+			height: 100%;
+			clear: none;
+		}
+
+		span {
+			background: rgb(229, 229, 229);
+			background: rgba(245,245,245,0.6);
+			line-height: 1.7em;
+			/* padding: 0.1em 0.2em 0.1em 0.05em; */
+		}
+	}
+	
+	aside { // contact, etc. box
+		background: rgb(229, 229, 229);
+		background: rgba(245,245,245,0.6);
+		padding: 1.5em 2em;
+		margin: 2em 0;
+		border: 1px solid rgb(225, 225, 225);
+		@include prefix(border-radius, $corners);
+		font: normal 0.8em 'Helvetica', 'Arial', sans-serif;
+		
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style: none;
+		}
+		i {
+			margin-right: 0.3em;
+		}
+	}
+	aside#contact {
+		display: none; // made visible by JS
+	}
+}
