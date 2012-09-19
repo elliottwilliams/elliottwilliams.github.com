@@ -2,7 +2,7 @@ $().ready(function(){
 	// set up background
 	$.backstretch("img/bg.jpg", {centeredX: false});
 	
-	// open-close contact aside
+	// open-close contact aside, currently unused
 	var contactOpen = false;
 	$('a[href~="#contact"]').click(function(event){
 		event.preventDefault();

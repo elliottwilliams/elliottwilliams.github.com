@@ -26,7 +26,8 @@ article {
   margin-top: -217.5px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  behavior: url("css/PIE.htc"); }
   @media (max-width: 799px) and (min-width: 361px) and (min-height: 361px) {
     article {
       left: 50%;
@@ -76,17 +77,20 @@ article {
       display: block;
       -moz-border-radius: 6px;
       -webkit-border-radius: 6px;
-      border-radius: 6px; }
+      border-radius: 6px;
+      behavior: url("css/PIE.htc"); }
       @media (max-width: 360px) {
         article #image img, article #image #shadow {
           -moz-border-radius: 0;
           -webkit-border-radius: 0;
-          border-radius: 0; } }
+          border-radius: 0;
+          behavior: url("css/PIE.htc"); } }
       @media (max-height: 360px) {
         article #image img, article #image #shadow {
           -moz-border-radius: 0;
           -webkit-border-radius: 0;
-          border-radius: 0; } }
+          border-radius: 0;
+          behavior: url("css/PIE.htc"); } }
     @media (max-width: 360px) and (orientation: portrait) {
       article #image img {
         width: 100%;
@@ -102,7 +106,8 @@ article {
       height: 360px;
       -moz-box-shadow: inset 0px -1px 6px #444444;
       -webkit-box-shadow: inset 0px -1px 6px #444444;
-      box-shadow: inset 0px -1px 6px #444444; }
+      box-shadow: inset 0px -1px 6px #444444;
+      behavior: url("css/PIE.htc"); }
       @media (max-width: 360px) and (orientation: portrait) {
         article #image #shadow {
           width: 100%;
@@ -112,6 +117,7 @@ article {
           -moz-box-shadow: none;
           -webkit-box-shadow: none;
           box-shadow: none;
+          behavior: url("css/PIE.htc");
           background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 15%);
           background-image: -o- linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 15%);
           background-image: -moz- linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 15%);
@@ -124,6 +130,7 @@ article {
           -moz-box-shadow: none;
           -webkit-box-shadow: none;
           box-shadow: none;
+          behavior: url("css/PIE.htc");
           background-image: linear-gradient(right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 15%);
           background-image: -o- linear-gradient(right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 15%);
           background-image: -moz- linear-gradient(right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 15%);
@@ -166,8 +173,9 @@ article {
     article #description span {
       background: #e5e5e5;
       background: rgba(245, 245, 245, 0.6);
-      line-height: 1.7em;
-      /* padding: 0.1em 0.2em 0.1em 0.05em; */ }
+      -pie-background: rgba(245, 245, 245, 0.6);
+      behavior: url("css/PIE.htc");
+      line-height: 1.7em; }
   article aside {
     background: #e5e5e5;
     background: rgba(245, 245, 245, 0.6);
@@ -177,6 +185,7 @@ article {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
+    behavior: url("css/PIE.htc");
     font: normal 0.8em 'Helvetica', 'Arial', sans-serif; }
     article aside ul {
       margin: 0;

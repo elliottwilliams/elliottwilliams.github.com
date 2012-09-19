@@ -7,6 +7,10 @@ $corners: 6px;
 	-moz-#{$prop}: $val;
 	-webkit-#{$prop}: $val;
 	#{$prop}: $val;
+	@include pieme;
+}
+@mixin pieme {
+	behavior: url('css/PIE.htc'); // Make IE8 happy
 }
 @mixin gradient($grad...) {
 	background-image: $grad;
@@ -179,8 +183,9 @@ article {
 		span {
 			background: rgb(229, 229, 229);
 			background: rgba(245,245,245,0.6);
+			-pie-background: rgba(245,245,245,0.6);
+			@include pieme;
 			line-height: 1.7em;
-			/* padding: 0.1em 0.2em 0.1em 0.05em; */
 		}
 	}
 	
