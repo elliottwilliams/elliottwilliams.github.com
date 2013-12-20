@@ -1,0 +1,42 @@
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic);
+
+$dim: rgba(255,255,255,0.7);
+
+body {
+  background-color: #3f6075;
+  color: #fff;
+  font: 300 1em/1.5em 'PT Serif Caption', serif;
+  max-width: 28em;
+  margin: 4em;
+  
+  @media (max-width: 36em) {
+    margin: 4em 11.11%;
+  }
+}
+
+a, a:link, a:visited {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid $dim;
+  margin-bottom: -1px;
+}
+a:hover {
+  border-bottom-color: #fff;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: normal;
+  color: #fff;
+  opacity: 0.7;
+  text-shadow: 0 -1px #333;
+}
+
+mark {
+  background-color: rgba(255,255,255,0.2);
+  padding: 0.2em;
+  margin: -0.2em;
+  color: inherit;
+}
