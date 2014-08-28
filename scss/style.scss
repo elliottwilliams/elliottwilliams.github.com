@@ -28,9 +28,17 @@ body {
   font: 300 1em/1.5em 'PT Serif Caption', serif;
   max-width: 28em;
   margin: 4em auto;
+
+  -webkit-font-smoothing: antialiased;
   
-  @media (max-width: 36em) {
+  @media (max-width: 40em) {
     margin: 4em 11.11%;
+
+    &.wide { max-width: 28em }
+  }
+
+  &.wide {
+    max-width: 38em;
   }
 
 }
@@ -53,6 +61,11 @@ h1 {
   font-weight: normal;
   color: $textcolor;
   text-shadow: 0 -1px #333, 0 0 4px rgb(95,95,95);
+
+  a, a:link, a:visited, a:hover {
+    border-bottom: none;
+    margin-bottom: inherit; 
+  }
 }
 
 mark {
