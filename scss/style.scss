@@ -3,21 +3,40 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic);
 
 $dim: rgba(255,255,255,0.7);
+$blockbg: rgb(25, 25, 25);
+$blockbg-grey: rgba(95, 95, 95, 0.90);
+$pagebg: rgb(225,225,225);
+$textcolor: rgb(240,230,230);
+
+.block {
+  padding: 1em;
+  margin: 0 -1em 1em;
+  background-color: $blockbg;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
 
 body {
-  background-color: rgb(195,195,195);
-  color: #fff;
+  background-color: $pagebg;
+  color: $textcolor;
   font: 300 1em/1.5em 'PT Serif Caption', serif;
   max-width: 28em;
-  margin: 4em;
+  margin: 4em auto;
   
   @media (max-width: 36em) {
     margin: 4em 11.11%;
   }
+
 }
 
 a, a:link, a:visited {
-  color: #fff;
+  color: $textcolor;
   text-decoration: none;
   border-bottom: 1px solid $dim;
   margin-bottom: -1px;
@@ -27,9 +46,12 @@ a:hover {
 }
 
 h1 {
+  @extend .block;
+  display: inline-block;
+
   font-size: 1em;
   font-weight: normal;
-  color: #fff;
+  color: $textcolor;
   text-shadow: 0 -1px #333, 0 0 4px rgb(95,95,95);
 }
 
@@ -41,7 +63,25 @@ mark {
 }
 
 section {
-  padding: 1em;
-  margin: 0 -1em -1em;
-  background-color: rgba(95, 95, 95, 0.90);
+  @extend .block;
+}
+
+ul.contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    display: inline;
+
+    &:after {
+      content: "•";
+      padding: 0 0.5em;
+    }
+
+    &:last-child:after {
+      content: none;
+    }
+  }
 }
