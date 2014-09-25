@@ -73,9 +73,11 @@ h1 a, h1 a:link, h1 a:visited, h1 a:hover {
   height: 3.5em;
   margin: 0em -1em -1em 1em;
   position: absolute;
+  padding: 0;
+  border: 0;
 }
 
-/* line 81, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 mark {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 0.2em;
@@ -83,23 +85,23 @@ mark {
   color: inherit;
 }
 
-/* line 92, ../scss/style.scss */
+/* line 94, ../scss/style.scss */
 ul.contact {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 98, ../scss/style.scss */
+/* line 100, ../scss/style.scss */
 ul.contact li {
   display: inline;
 }
-/* line 101, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 ul.contact li:after {
   content: "•";
   padding: 0 0.5em;
 }
-/* line 106, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 ul.contact li:last-child:after {
   content: none;
 }

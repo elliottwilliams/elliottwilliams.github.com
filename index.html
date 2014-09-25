@@ -9,19 +9,17 @@
   <title>Elliott Williams</title>
 
   <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />  
-  <!--
-  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="jquery.backstretch.min.js"></script>
 
   <script>
-  $().ready(function() {
-    To attach Backstrech as the body's background
-    $.backstretch("bkgd.jpg");
-  })
-  </script>
-  -->
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  <script src="ga.js"></script>
+    ga('create', 'UA-34914432-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 
 </head>
 
@@ -60,8 +58,13 @@
 
 </section>
 
-<script src="instantclick.min.js" data-no-instant></script>
-<script data-no-instant>InstantClick.init();</script>
+<script src="bower_components/instantclick/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>
+  InstantClick.on('change', function() {
+    ga('send', 'pageview', location.pathname + location.search);
+  });
+  InstantClick.init();
+</script>
 
 </body>
 
