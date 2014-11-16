@@ -1,17 +1,15 @@
-@import "compass/css3";
-
 @import url(http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic);
 
-$dim: rgba(255,255,255,0.7);
-$blockbg: rgb(25, 25, 25);
-$blockbg-grey: rgba(95, 95, 95, 0.90);
-$pagebg: rgb(225,225,225);
-$textcolor: rgb(240,230,230);
+@dim: rgba(255,255,255,0.7);
+@blockbg: rgb(25, 25, 25);
+@blockbg-grey: rgba(95, 95, 95, 0.90);
+@pagebg: rgb(225,225,225);
+@textcolor: rgb(240,230,230);
 
 .block {
   padding: 1em;
   margin: 0 -1em 1em;
-  background-color: $blockbg;
+  background-color: @blockbg;
 
   p:first-child {
     margin-top: 0;
@@ -22,14 +20,20 @@ $textcolor: rgb(240,230,230);
   }
 }
 
+.wide {
+  max-width: 34em;
+}
+
 body {
-  background-color: $pagebg;
-  color: $textcolor;
+  background-color: @pagebg;
+  color: @textcolor;
   font: 300 1em/1.5em 'PT Serif Caption', serif;
   max-width: 28em;
   margin: 4em auto;
 
   -webkit-font-smoothing: antialiased;
+
+  -webkit-transition: max-width 100ms;
   
   @media (max-width: 40em) {
     margin: 4em 11.11%;
@@ -37,16 +41,16 @@ body {
     &.wide { max-width: 28em }
   }
 
-  &.wide {
-    max-width: 38em;
+  &.layout-document {
+    .wide();
   }
 
 }
 
 a, a:link, a:visited {
-  color: $textcolor;
+  color: @textcolor;
   text-decoration: none;
-  border-bottom: 1px solid $dim;
+  border-bottom: 1px solid @dim;
   margin-bottom: -1px;
 }
 a:hover {
@@ -54,13 +58,14 @@ a:hover {
 }
 
 h1 {
-  @extend .block;
+  .block();
+
   display: inline-block;
   position: relative;
 
   font-size: 1em;
   font-weight: normal;
-  color: $textcolor;
+  color: @textcolor;
   text-shadow: 0 -1px #333, 0 0 4px rgb(95,95,95);
 
   a, a:link, a:visited, a:hover {
@@ -88,7 +93,7 @@ mark {
 }
 
 section {
-  @extend .block;
+  .block();
 }
 
 ul.contact {

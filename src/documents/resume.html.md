@@ -1,8 +1,7 @@
 ---
-title: Resume
-layout: default
+title: Résumé
+layout: document
 ---
-
 
 Education
 ---------
@@ -95,4 +94,3 @@ Platforms
 
 -   OS X
 -   \*nix
-
