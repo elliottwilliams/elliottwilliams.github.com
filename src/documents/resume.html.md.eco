@@ -1,0 +1,98 @@
+---
+layout: default
+title: Resume
+---
+
+
+Education
+---------
+
+Purdue University (May 2018)
+
+-   B.S. Computer Science
+-   B.A. Political Science
+
+Fishers High School (June 2014)
+
+-   GPA: 4.125, top 7% of graduating class
+-   Core 40 Academic Honors diploma
+-   AP Scholar of Distinction award, 2013
+
+Experience
+----------
+
+Developer and Community Infrastructure, OpenMRS (June 2010 - present)
+
+-   I joined OpenMRS in 2010 at age 15 as a learning web application
+    developer. I work with a team at the Regenstrief Institute in
+    Indianapolis on OpenMRS, a free, open-source electronic medical
+    record system used to bring developing nations access to healthcare.
+    I develop & maintain applications that are used by thousands of
+    OpenMRS volunteers and implementers.
+
+Google Summer of Code Mentor (April-August 2014)
+
+-   I mentored an undergraduate student in the 2014 season of [Google
+    Summer of
+    Code](https://developers.google.com/open-source/soc/?csw=1) while
+    working for OpenMRS. I gained experience collaborating on software
+    and managing the work of another contributor. I am representing
+    OpenMRS as a delegate in the 2014 [GSoC Mentors
+    Summit](http://google-opensource.blogspot.com/2014/05/google-summer-of-code-mentor-summit.html).
+
+Areas of Expertise
+------------------
+
+### Programming Languages
+
+(in order of familiarity)
+
+-   JavaScript / Node.js
+-   Groovy
+-   Java
+-   Ruby
+-   Python
+
+### Web Technologies
+
+-   HTML5
+-   CSS3
+-   HTTP
+-   REST-compliant APIs
+
+### Frameworks
+
+Server-side
+
+-   Express ([project](https://github.com/openmrs/openmrs-contrib-id))
+-   Grails
+    ([project](https://github.com/openmrs/openmrs-contrib-modulus))
+-   Django ([project](git@github.com:elliottwilliams/django-rsvp.git))
+
+Client-side
+
+-   AngularJS
+    ([project](https://github.com/openmrs/openmrs-contrib-modulus-ui))
+-   Backbone
+    ([project](https://github.com/openmrs/openmrs-contrib-id-globalnavbar))
+
+### Tools
+
+Databases
+
+-   MySQL
+-   MongoDB
+-   LDAP
+
+SCM / Collaboration
+
+-   Git
+-   GitHub
+-   JIRA
+-   CI / CD via Bamboo
+
+Platforms
+
+-   OS X
+-   \*nix
+

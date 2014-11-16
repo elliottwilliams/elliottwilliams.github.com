@@ -1,0 +1,12 @@
+<html>
+<head>
+  <title></title>
+  <style>
+  body { background-color: cyan; }
+  </style>
+</head>
+<body>
+<%- @document.content %>
+</body>
+</html>
+
