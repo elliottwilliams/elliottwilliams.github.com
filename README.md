@@ -8,7 +8,9 @@ Building
 
 * Node ~0.10 required
 * `npm install`
+* `npm install -g docpad`
 * `docpad run` to start live server
+    * alternatively, `docpad generate` to build the site in the `out/` directory
 
 Pushing
 -------
