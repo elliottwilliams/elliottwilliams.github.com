@@ -37,7 +37,7 @@ eating so I can get the insulin to compensate. Aside from that, I keep
 another device called a *glucose meter* around so I check the glucose
 levels in my blood, and I need some sort of food with me, in case my
 blood sugar gets too low and I need to spike it back up. As someone
-who’s used this regimen daily for the past 6 years, this routine
+who’s used this regimen daily for the past 6 years, this routine is
 relatively simple, and all second-nature.
 
 Yet I’m disabled. Ironically, the time my diabetes felt most like a
