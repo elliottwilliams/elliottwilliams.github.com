@@ -13,6 +13,15 @@ docpadConfig = {
         
       ]
 
+    getMonthName: (i) ->
+      ['January', 'February', 'March', 'April', 'June', 'July',
+       'August', 'September', 'October', 'November', 'December'][i]
+
+  collections:
+    essays: ->
+      @getCollection("html").findAllLive({relativeOutDirPath: 'essays'},
+        [{date:1}])
+
 }
 
 # Export the DocPad Configuration

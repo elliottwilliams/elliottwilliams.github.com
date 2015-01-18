@@ -44,27 +44,31 @@ a:visited {
 a:hover {
   border-bottom-color: #fff;
 }
-h1 {
-  padding: 1em;
-  margin: 0 -1em 1em;
-  background-color: #191919;
+h1,
+h2 {
   display: inline-block;
   position: relative;
+  margin: 0;
   font-size: 1em;
   font-weight: normal;
   color: #f0e6e6;
   text-shadow: 0 -1px #333333, 0 0 4px #5f5f5f;
 }
-h1 p:first-child {
+h1.site-header {
+  padding: 1em;
+  margin: 0 -1em 1em;
+  background-color: #191919;
+}
+h1.site-header p:first-child {
   margin-top: 0;
 }
-h1 p:last-child {
+h1.site-header p:last-child {
   margin-bottom: 0;
 }
-h1 a,
-h1 a:link,
-h1 a:visited,
-h1 a:hover {
+h1.site-header a,
+h1.site-header a:link,
+h1.site-header a:visited,
+h1.site-header a:hover {
   border-bottom: none;
   margin-bottom: inherit;
 }
@@ -108,4 +112,7 @@ ul.contact li:after {
 }
 ul.contact li:last-child:after {
   content: none;
+}
+.post-list-date {
+  white-space: nowrap;
 }

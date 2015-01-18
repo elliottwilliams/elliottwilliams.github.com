@@ -18,6 +18,26 @@ isHome: true
 
 <section>
 
+  <h2>Essays</h2>
+
+  <ul class="post-list">
+  <% for post in @getCollection("essays").toJSON(): %>
+    <li>
+      <a href="<%= post.url %>"><%= post.title %></a> : 
+      <span class="post-synopsis"><%= post.synopsis %>
+      <em class="post-list-date">
+        <%= post.date.getDate() %>
+        <%= @getMonthName(post.date.getMonth()) %>
+        <%= post.date.getFullYear() %>
+      </em>
+    </li>
+  <% end %>
+  </ul>
+
+</section>
+
+<section>
+
   <ul class="contact">
     <li>
       <a href="/docs/Resume-20141219.pdf">Résumé</a>

@@ -57,24 +57,28 @@ a:hover {
   border-bottom-color: #fff;
 }
 
-h1 {
-  .block();
-
+h1, h2 {
   display: inline-block;
   position: relative;
+  margin: 0;
 
   font-size: 1em;
   font-weight: normal;
   color: @textcolor;
   text-shadow: 0 -1px #333, 0 0 4px rgb(95,95,95);
 
+  
+}
+
+h1.site-header {
+  .block();
+
   a, a:link, a:visited, a:hover {
     border-bottom: none;
     margin-bottom: inherit; 
   }
-
-  
 }
+
 
 .avatar {
   width: 3.5em;
@@ -114,4 +118,9 @@ ul.contact {
       content: none;
     }
   }
+}
+
+.post-list {}
+.post-list-date {
+  white-space: nowrap;
 }
