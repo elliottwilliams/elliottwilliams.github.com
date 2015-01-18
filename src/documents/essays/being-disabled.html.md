@@ -1,6 +1,10 @@
 ---
 title: Being Disabled
 layout: document
+date: 14 Jan 2015
+synopsis: |
+  Thoughts regarding type 1 diabetes and being disabled without feeling
+  disabled.
 ---
 
 (This was originally written as an essay for school, on 14 January 2015.)
