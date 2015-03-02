@@ -7,10 +7,10 @@ isHome: true
 <section>
 
   <t render="markdown">
-    I'm a developer for [OpenMRS](https://openmrs.org) in 
-    Indianapolis, Indiana, and a Computer Science student at Purdue 
-    University. I have a passion for open source software, UI/UX, the 
-    open web, and am interested in technology as a means for social
+    I’m a developer in Indianapolis, Indiana, and a Computer 
+    Science student at Purdue University. I have a passion for 
+    open source software, systems programming, UI/UX, the open 
+    web, and am interested in technology as a means for social 
     change.
   </t>
 
