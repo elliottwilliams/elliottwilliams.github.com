@@ -116,3 +116,6 @@ ul.contact li:last-child:after {
 .post-list-date {
   white-space: nowrap;
 }
+.full-width {
+  width: 100%;
+}

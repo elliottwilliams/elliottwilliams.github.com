@@ -5,7 +5,7 @@ layout: default
 
 <section>
 
-  <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A717TY4sfgKQm4kFbYQIzgo" width="448" height="80" frameborder="0" allowtransparency="true"></iframe>
+  <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A717TY4sfgKQm4kFbYQIzgo" height="80" frameborder="0" allowtransparency="true" class="full-width"></iframe>
   <p>
     Sometimes, you need this.
   </p>
