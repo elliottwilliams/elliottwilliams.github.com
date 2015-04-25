@@ -72,6 +72,10 @@ a:visited img {
 a:hover {
   border-bottom-color: #fff;
 }
+a.no-border {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
 h1,
 h2 {
   display: inline-block;

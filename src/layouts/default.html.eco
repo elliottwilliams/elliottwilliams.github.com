@@ -33,9 +33,14 @@
 <body class="layout-<%= @document.layout %>">
 
 <h1 class="site-header">
-  <a href="/">Elliott Williams</a>
+  <a href="/" alt="Navigate home">Elliott Williams</a>
 </h1>
-<img class="avatar" src="https://secure.gravatar.com/avatar/9671c7e02ed9235482bc758105e37a21?s=102">
+<a class="no-border"
+  href="https://secure.gravatar.com/avatar/9671c7e02ed9235482bc758105e37a21?s=1024">
+  <img class="avatar"
+    src="https://secure.gravatar.com/avatar/9671c7e02ed9235482bc758105e37a21?s=102"
+    alt="Image of Elliott Williams">
+</a>
 
 <%- @content %>
 
