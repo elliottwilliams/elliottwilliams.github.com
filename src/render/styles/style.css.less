@@ -20,6 +20,20 @@
   }
 }
 
+.block-invert {
+  .block();
+  background-color: transparent;
+  color: @blockbg;
+
+  a, a:link, a:visited {
+    color: @blockbg;
+    border-bottom-color: @blockbg;
+  }
+  a:hover {
+    border-bottom-color: #000;
+  }
+}
+
 .wide {
   max-width: 34em;
 }
@@ -52,6 +66,11 @@ a, a:link, a:visited {
   text-decoration: none;
   border-bottom: 1px solid @dim;
   margin-bottom: -1px;
+
+  img {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 }
 a:hover {
   border-bottom-color: #fff;
@@ -118,6 +137,12 @@ ul.contact {
       content: none;
     }
   }
+}
+
+footer {
+  .block-invert();
+  font-size: smaller;
+
 }
 
 .post-list {}
