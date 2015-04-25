@@ -119,3 +119,6 @@ ul.contact li:last-child:after {
 .full-width {
   width: 100%;
 }
+.top-right {
+  float: right;
+}
