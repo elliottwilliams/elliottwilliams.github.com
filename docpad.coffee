@@ -22,6 +22,11 @@ docpadConfig = {
       @getCollection("html").findAllLive({relativeOutDirPath: 'essays'},
         [{date:1}])
 
+
+  plugins:
+    assets:
+      retainName: 'yes'
+
 }
 
 # Export the DocPad Configuration

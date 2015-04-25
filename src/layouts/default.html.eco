@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
 
   <%- @getBlock("meta").toHTML() %>
-  <%- @getBlock("styles").add(@site.styles).toHTML() %>
+
+  <% for href in @site.styles: %>
+    <link rel="stylesheet" href="<%- @asset(href) %>">
+  <% end %>
 
   <title>
     <%= if !@document.isHome then "#{@document.title} | " %><%= @site.title %>
@@ -25,7 +28,7 @@
   </script>
 
   <!--[if lt IE 9]>
-    <script src="/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="<%- @asset('/bower_components/html5shiv/dist/html5shiv.min.js') %>"></script>
   <![endif]-->
 
 </head>
@@ -46,7 +49,7 @@
 
 <%- @getBlock("scripts").add(@site.scripts).toHTML() %>
 
-<script src="/lib/instantclick.min.js" data-no-instant></script>
+<script src="<%- @asset('/lib/instantclick.min.js') %>" data-no-instant></script>
 <script data-no-instant>
   InstantClick.on('change', function() {
     ga('send', 'pageview', location.pathname + location.search);
