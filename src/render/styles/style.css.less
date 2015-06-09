@@ -1,15 +1,18 @@
-@import url(//fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic);
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic|Oswald);
 
-@dim: rgba(255,255,255,0.7);
-@blockbg: rgb(25, 25, 25);
-@blockbg-grey: rgba(95, 95, 95, 0.90);
-@pagebg: rgb(225,225,225);
-@textcolor: rgb(240,230,230);
+@blockbg: transparent;
+@blockbg-accent: #458ad1;
+@pagebg: #ded9d6;
+@textcolor: #292929;
+@textcolor-dim: #696969;
+@textcolor-shadow: #a8a5a2;
 
 .block {
   padding: 1em;
   margin: 0 -1em 1em;
+
   background-color: @blockbg;
+  &.accent { background-color: @blockbg-accent }
 
   p:first-child {
     margin-top: 0;
@@ -20,20 +23,6 @@
   }
 }
 
-.block-invert {
-  .block();
-  background-color: transparent;
-  color: @blockbg;
-
-  a, a:link, a:visited {
-    color: @blockbg;
-    border-bottom-color: @blockbg;
-  }
-  a:hover {
-    border-bottom-color: #000;
-  }
-}
-
 .wide {
   max-width: 34em;
 }
@@ -41,7 +30,7 @@
 body {
   background-color: @pagebg;
   color: @textcolor;
-  font: 300 1em/1.5em 'PT Serif Caption', serif;
+  font: 300 18px/1.7em 'Source Sans Pro', Helvetica, Arial, sans-serif;
   max-width: 28em;
   margin: 4em auto;
 
@@ -64,7 +53,7 @@ body {
 a, a:link, a:visited {
   color: @textcolor;
   text-decoration: none;
-  border-bottom: 1px solid @dim;
+  border-bottom: 1px solid @textcolor-dim;
   margin-bottom: -1px;
 
   img {
@@ -73,7 +62,7 @@ a, a:link, a:visited {
   }
 }
 a:hover {
-  border-bottom-color: #fff;
+  border-bottom-color: @textcolor;
 }
 a.no-border {
   border-bottom: 0;
@@ -86,9 +75,11 @@ h1, h2 {
   margin: 0;
 
   font-size: 1em;
+  font-family: 'Oswald', 'Futura', 'Arial Narrow', sans-serif;
   font-weight: normal;
   color: @textcolor;
-  text-shadow: 0 -1px #333, 0 0 4px rgb(95,95,95);
+  text-shadow: 0 -1px @textcolor-shadow;
+  text-transform: uppercase;
 
   
 }
@@ -144,7 +135,7 @@ ul.contact {
 }
 
 footer {
-  .block-invert();
+  .block();
   font-size: smaller;
 
 }
