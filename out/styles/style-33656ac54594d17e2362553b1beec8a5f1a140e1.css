@@ -135,6 +135,11 @@ figure p:first-child {
 figure p:last-child {
   margin-bottom: 0;
 }
+@media (max-width: 40em) {
+  figure {
+    margin: 1.5em -15% 0;
+  }
+}
 figure img,
 figure video {
   width: 100%;
