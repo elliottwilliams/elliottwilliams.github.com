@@ -6,6 +6,7 @@
 @textcolor: #292929;
 @textcolor-dim: #696969;
 @textcolor-shadow: #a8a5a2;
+@shadow: #696969;
 
 .block {
   padding: 1em;
@@ -112,6 +113,26 @@ mark {
 
 section {
   .block();
+}
+
+// For full-width images, media, and the like.
+figure {
+  .block();
+  margin: 1.5em -1.5em 0 -1.5em;
+  padding: 0;
+  position: relative;
+}
+
+figure img, figure video {
+  width: 100%;
+  box-shadow: 0 1px 0 @shadow;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: small;
+  margin: 0 2.5em 2em;
+  text-align: center;
 }
 
 ul.contact {
