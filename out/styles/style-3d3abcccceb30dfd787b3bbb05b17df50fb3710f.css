@@ -4,9 +4,6 @@
   margin: 0 -1em 1em;
   background-color: transparent;
 }
-.block.accent {
-  background-color: #458ad1;
-}
 .block p:first-child {
   margin-top: 0;
 }
@@ -16,12 +13,33 @@
 .wide {
   max-width: 34em;
 }
+.invert {
+  background-color: #292929;
+  color: #ded9d6;
+}
+.invert .block,
+.invert.block {
+  background-color: transparent;
+}
+.invert a,
+.invert a:link,
+.invert a:visited {
+  color: #ded9d6;
+  border-bottom-color: #9e9996;
+}
+.invert a:hover {
+  border-bottom-color: #ded9d6;
+}
+.invert h1,
+.invert h2 {
+  color: #ded9d6;
+}
 body {
   background-color: #ded9d6;
   color: #292929;
   font: 300 18px/1.7em 'Source Sans Pro', Helvetica, Arial, sans-serif;
   max-width: 28em;
-  margin: 4em auto;
+  margin: 4em 0 4em 6.472em;
   -webkit-font-smoothing: antialiased;
   -webkit-transition: max-width 100ms;
 }
@@ -66,16 +84,12 @@ h2 {
   font-family: 'Oswald', 'Futura', 'Arial Narrow', sans-serif;
   font-weight: normal;
   color: #292929;
-  text-shadow: 0 -1px #a8a5a2;
   text-transform: uppercase;
 }
 h1.site-header {
   padding: 1em;
   margin: 0 -1em 1em;
   background-color: transparent;
-}
-h1.site-header.accent {
-  background-color: #458ad1;
 }
 h1.site-header p:first-child {
   margin-top: 0;
@@ -109,9 +123,6 @@ section {
   margin: 0 -1em 1em;
   background-color: transparent;
 }
-section.accent {
-  background-color: #458ad1;
-}
 section p:first-child {
   margin-top: 0;
 }
@@ -125,9 +136,6 @@ figure {
   margin: 1.5em -1.5em 0 -1.5em;
   padding: 0;
   position: relative;
-}
-figure.accent {
-  background-color: #458ad1;
 }
 figure p:first-child {
   margin-top: 0;
@@ -143,7 +151,6 @@ figure p:last-child {
 figure img,
 figure video {
   width: 100%;
-  box-shadow: 0 1px 0 #696969;
 }
 figcaption {
   font-style: italic;
@@ -154,8 +161,27 @@ figcaption {
 ul.contact {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 1em 0;
   text-align: center;
+  background-color: #292929;
+  color: #ded9d6;
+}
+ul.contact .block,
+ul.contact.block {
+  background-color: transparent;
+}
+ul.contact a,
+ul.contact a:link,
+ul.contact a:visited {
+  color: #ded9d6;
+  border-bottom-color: #9e9996;
+}
+ul.contact a:hover {
+  border-bottom-color: #ded9d6;
+}
+ul.contact h1,
+ul.contact h2 {
+  color: #ded9d6;
 }
 ul.contact li {
   display: inline;
@@ -172,9 +198,6 @@ footer {
   margin: 0 -1em 1em;
   background-color: transparent;
   font-size: smaller;
-}
-footer.accent {
-  background-color: #458ad1;
 }
 footer p:first-child {
   margin-top: 0;

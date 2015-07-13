@@ -1,0 +1,2 @@
+default: src/*
+	docpad generate

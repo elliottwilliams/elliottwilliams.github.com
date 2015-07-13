@@ -1,19 +1,20 @@
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic|Oswald);
 
 @blockbg: transparent;
-@blockbg-accent: #458ad1;
 @pagebg: #ded9d6;
 @textcolor: #292929;
 @textcolor-dim: #696969;
-@textcolor-shadow: #a8a5a2;
-@shadow: #696969;
+
+@blockbg-invert: transparent;
+@pagebg-invert: @textcolor;
+@textcolor-invert: @pagebg;
+@textcolor-dim-invert: #9e9996;
 
 .block {
   padding: 1em;
   margin: 0 -1em 1em;
 
   background-color: @blockbg;
-  &.accent { background-color: @blockbg-accent }
 
   p:first-child {
     margin-top: 0;
@@ -28,12 +29,33 @@
   max-width: 34em;
 }
 
+.invert {
+  background-color: @pagebg-invert;
+  color: @textcolor-invert;
+
+  .block, &.block {
+    background-color: @blockbg-invert;
+  }
+
+  a, a:link, a:visited {
+    color: @textcolor-invert;
+    border-bottom-color: @textcolor-dim-invert;
+  }
+  a:hover {
+    border-bottom-color: @textcolor-invert;
+  }
+
+  h1, h2 {
+    color: @textcolor-invert;
+  }
+}
+
 body {
   background-color: @pagebg;
   color: @textcolor;
   font: 300 18px/1.7em 'Source Sans Pro', Helvetica, Arial, sans-serif;
   max-width: 28em;
-  margin: 4em auto;
+  margin: 4em 0 4em 6.472em;
 
   -webkit-font-smoothing: antialiased;
 
@@ -79,10 +101,7 @@ h1, h2 {
   font-family: 'Oswald', 'Futura', 'Arial Narrow', sans-serif;
   font-weight: normal;
   color: @textcolor;
-  text-shadow: 0 -1px @textcolor-shadow;
   text-transform: uppercase;
-
-  
 }
 
 h1.site-header {
@@ -129,7 +148,6 @@ figure {
 
 figure img, figure video {
   width: 100%;
-  box-shadow: 0 1px 0 @shadow;
 }
 
 figcaption {
@@ -142,8 +160,10 @@ figcaption {
 ul.contact {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 1em 0;
   text-align: center;
+
+  .invert();
 
   li {
     display: inline;
