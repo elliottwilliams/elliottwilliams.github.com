@@ -80,4 +80,14 @@ isHome: true
   <% end %>
   </ul>
 
+  <aside>
+    <small>
+      don't forget, 
+      <a href="https://github.com/elliottwilliams">
+        code is poetry,
+      </a>
+      too ;)
+    </small>
+  </aside>
+
 </section>
