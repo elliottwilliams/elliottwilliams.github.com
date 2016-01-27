@@ -25,4 +25,7 @@ To push new commits:
 
 To re-deploy the site:
 
-    git subtree push --prefix out origin master
+- using the [ghpages][] plugin: `docpad deploy-ghpages --env static`
+- using a manual subtree push: `git subtree push --prefix out origin master`
+
+[ghpages]: https://github.com/docpad/docpad-plugin-ghpages
