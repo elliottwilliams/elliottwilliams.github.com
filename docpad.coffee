@@ -27,6 +27,10 @@ docpadConfig = {
     assets:
       retainName: 'yes'
 
+    ghpages:
+      deployRemote: 'origin'
+      deployBranch: 'master'
+
 }
 
 # Export the DocPad Configuration

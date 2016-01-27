@@ -10,6 +10,7 @@
     "docpad": "~6.69.1",
     "docpad-plugin-assets": "~2.1.2",
     "docpad-plugin-eco": "~2.1.0",
+    "docpad-plugin-ghpages": "~2.4.4",
     "docpad-plugin-less": "~2.4.1",
     "docpad-plugin-livereload": "~2.6.0",
     "docpad-plugin-multimarkdown": "~2.0.0",
