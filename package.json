@@ -1,23 +1,26 @@
 {
-  "name": "no-skeleton.docpad",
+  "name": "elliottwillia.ms",
   "version": "0.1.0",
-  "description": "New DocPad project without using a skeleton",
+  "description": "Generator for elliottwilliams's web site",
+  "license": "MIT",
+  "repository": "https://github.com/elliottwilliams/elliottwilliams.github.com",
   "engines": {
-    "node": "0.10",
-    "npm": "1.3"
+    "node": "5.1.1",
+    "npm": "3.3.12"
   },
   "dependencies": {
-    "docpad": "~6.69.1",
+    "docpad": "~6.78.4",
     "docpad-plugin-assets": "~2.1.2",
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-ghpages": "~2.4.4",
     "docpad-plugin-less": "~2.4.1",
-    "docpad-plugin-livereload": "~2.6.0",
-    "docpad-plugin-multimarkdown": "~2.0.0",
-    "docpad-plugin-text": "~2.3.2"
+    "docpad-plugin-livereload": "~2.7.1",
+    "docpad-plugin-marked": "~2.3.0",
+    "docpad-plugin-text": "~2.3.0"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server"
-  }
+  },
+  "devDependencies": {}
 }
