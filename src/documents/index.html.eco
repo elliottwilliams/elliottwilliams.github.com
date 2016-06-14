@@ -6,88 +6,100 @@ isHome: true
 
 <section class="about-me">
 
-  <t render="markdown">
+    <t render="markdown">
     I’m a software developer from Indianapolis, Indiana, and an undergrad
     Computer Science and Philosophy student at Purdue University. I have a
     passion for free and open source software; interface design, usability, and
     HCI; and am interested in technology as a means for social change.
- </t>
+    </t>
 
 </section>
 
 <section>
 
-  <ul class="contact">
+    <ul class="contact">
 
-    <li>
-      <a href="/docs/Resume-pub-20150914.pdf">Résumé</a>
-    </li>
-    <li>
-      <a href="http://www.google.com/recaptcha/mailhide/d?k=01izhQl-2cWBF7xicymq5TIQ==&c=YYUJINXx6PnPcIG-ZiafIX129bQwcrudcu8CrYDaxAM=">Email</a>
-    </li>
-    <li>
-      <a href="http://github.com/elliottwilliams">GitHub</a>
-    </li>
-    <li>
-      <a href="http://twitter.com/elliottwil">Twitter</a>
-    </li>
-  </ul>
-
-</section>
-
-<section>
-
-  <h2>Work</h2>
-
-  <p>Currently</p>
-  <ul>
-    <li>
-      <a href="https://www.openmrs.org">OpenMRS</a>
-      (Identity Systems Manager)
-    </li>
-    <li>
-      <a href="http://greyhousecoffee.com">Greyhouse Coffee & Supply Co.</a>
-      (Barista)
-    </li>
-  </ul>
-
-  <p>Previously</p>
-  <ul>
-    <li>
-      <a href="http://www.yelp.com">Yelp</a>
-      (Software Engineering Intern, Summer 2015)
-    </li>
-    </li>
-  </ul>
+        <li>
+            <a href="/docs/Resume-pub-20150914.pdf">Résumé</a>
+        </li>
+        <li>
+            <a href="http://www.google.com/recaptcha/mailhide/d?k=01izhQl-2cWBF7xicymq5TIQ==&c=YYUJINXx6PnPcIG-ZiafIX129bQwcrudcu8CrYDaxAM=">Email</a>
+        </li>
+        <li>
+            <a href="http://github.com/elliottwilliams">GitHub</a>
+        </li>
+        <li>
+            <a href="http://twitter.com/elliottwil">Twitter</a>
+        </li>
+    </ul>
 
 </section>
 
 <section>
 
-  <h2>Writing</h2>
+    <h2>Work</h2>
 
-  <ul class="post-list">
-  <% for post in @getCollection("essays").toJSON(): %>
-    <li>
-      <a href="<%= post.url %>"><%= post.title %></a> : 
-      <span class="post-synopsis"><%= post.synopsis %>
-      <em class="post-list-date">
-        <%= post.date.getDate() %>
-        <%= @getMonthName(post.date.getMonth()) %>
-        <%= post.date.getFullYear() %>
-      </em>
-    </li>
-  <% end %>
-  </ul>
+    <p>Currently, my time is split between</p>
+    <ul>
+        <li>
+            <a href="https://engineering.purdue.edu/GrouperLab">GROUPER Lab</a>,
+            Purdue University (Undergraduate Researcher)
+        </li>
+        <li>
+            <a href="https://engineering.purdue.edu/INSGC/">Indiana Space Grant
+                Consortium</a>, Purdue University / NASA (Research Intern)
+        </li>
+        <li>
+            <a href="http://matchboxstudio.org/">MatchBOX Coworking Studio</a>
+            (Web Developer)
+        </li>
+        <li>
+            <a href="http://greyhousecoffee.com">Greyhouse Coffee & Supply Co.</a>
+            (Barista)
+        </li>
+    </ul>
 
-  <aside>
-    <small>
-      don't forget, 
-      <a href="https://github.com/elliottwilliams">
-        code is poetry,
-      </a>
-      too ;)
-    </small>
-  </aside>
+    <p>Previously</p>
+    <ul>
+        <li>
+            <a href="http://www.yelp.com">Yelp</a>
+            (Software Engineering Intern, Summer 2015)
+        </li>
+        <li>
+            <a href="https://www.openmrs.org">OpenMRS</a>
+            (Identity Systems Manager, primarily 2012-2014, though I'm still a
+            volunteer!)
+        </li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Selected Writing</h2>
+
+    <ul class="post-list">
+        <% for post in @getCollection("essays").toJSON(): %>
+            <li>
+                <a href="<%= post.url %>"><%= post.title %></a> : 
+                <span class="post-synopsis"><%= post.synopsis %>
+                <em class="post-list-date">
+                    <%= post.date.getDate() %>
+                    <%= @getMonthName(post.date.getMonth()) %>
+                    <%= post.date.getFullYear() %>
+                </em>
+            </li>
+        <% end %>
+    </ul>
+
+    <aside>
+        <small>
+            don't forget, 
+            <a href="https://github.com/elliottwilliams">
+                code is poetry,
+            </a>
+            too ;)
+        </small>
+    </aside>
 
 </section>
