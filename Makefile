@@ -1,5 +1,12 @@
+OPTS=--env static
+
 default: src/*
-	docpad generate
+	docpad generate ${OPTS}
 
 deploy:
-	git subtree push --prefix out origin master
+	docpad deploy-ghpages ${OPTS}
+
+serve:
+	docpad run ${OPTS}
+
+.PHONY: deploy serve
