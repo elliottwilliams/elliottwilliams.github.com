@@ -79,7 +79,7 @@ isHome: true
     <h2>Selected Writing</h2>
 
     <ul class="post-list">
-        <% for post in @getCollection("essays").toJSON(): %>
+        <% for post in @getCollection("essays").toJSON().reverse(): %>
             <li>
                 <a href="<%= post.url %>"><%= post.title %></a> : 
                 <span class="post-synopsis"><%= post.synopsis %>
