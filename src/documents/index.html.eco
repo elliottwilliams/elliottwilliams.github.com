@@ -8,70 +8,47 @@ isHome: true
 
     <t render="markdown">
     I’m a software developer from Indianapolis, Indiana, and an undergrad
-    Computer Science and Philosophy student at Purdue University. I have a
-    passion for free and open source software; interface design, usability, and
-    HCI; and am interested in technology as a means for social change.
+    Computer Science and Philosophy student at Purdue University. I'm
+    passionate about system design, free and open source software, interface
+    design and usability, and am interested in technology as a means for social
+    change.
     </t>
 
 </section>
 
 <section>
-
-    <ul class="contact">
-
-        <li>
-            <a href="/docs/Resume.pdf">Résumé</a>
-        </li>
-        <li>
-            <a href="http://www.google.com/recaptcha/mailhide/d?k=01izhQl-2cWBF7xicymq5TIQ==&c=YYUJINXx6PnPcIG-ZiafIX129bQwcrudcu8CrYDaxAM=">Email</a>
-        </li>
-        <li>
-            <a href="http://github.com/elliottwilliams">GitHub</a>
-        </li>
-        <li>
-            <a href="http://twitter.com/elliottwil">Twitter</a>
-        </li>
-    </ul>
-
+  <ul class="contact">
+    <li>
+      <a href="/docs/Resume.pdf">Résumé</a>
+    </li>
+    <li>
+      <a href="http://www.google.com/recaptcha/mailhide/d?k=01izhQl-2cWBF7xicymq5TIQ==&c=YYUJINXx6PnPcIG-ZiafIX129bQwcrudcu8CrYDaxAM=">Email</a>
+    </li>
+    <li>
+      <a href="http://github.com/elliottwilliams">GitHub</a>
+    </li>
+    <li>
+      <a href="http://twitter.com/elliottwil">Twitter</a>
+    </li>
+  </ul>
 </section>
 
 <section>
+  <t render="markdown">
+  ## Work
 
-    <h2>Work</h2>
+  Currently
 
-    <p>Currently, my time is split between</p>
-    <ul>
-        <li>
-            <a href="https://engineering.purdue.edu/GrouperLab">GROUPER Lab</a>,
-            Purdue University (Undergraduate Researcher)
-        </li>
-        <li>
-            <a href="https://engineering.purdue.edu/INSGC/">Indiana Space Grant
-                Consortium</a>, Purdue University / NASA (Research Intern)
-        </li>
-        <li>
-            <a href="http://matchboxstudio.org/">MatchBOX Coworking Studio</a>
-            (Web Developer)
-        </li>
-        <li>
-            <a href="http://greyhousecoffee.com">Greyhouse Coffee & Supply Co.</a>
-            (Barista)
-        </li>
-    </ul>
+  - [Yelp](http://www.yelp.com) (Software Engineering Intern, 2015 and 2017)
+  - [MatchBOX Coworking Studio](http://matchboxstudio.org/) (Web Developer)
+  - [Greyhouse Coffee & Supply Co.](http://greyhousecoffee.com) (Barista)
 
-    <p>Previously</p>
-    <ul>
-        <li>
-            <a href="http://www.yelp.com">Yelp</a>
-            (Software Engineering Intern, Summer 2015)
-        </li>
-        <li>
-            <a href="https://www.openmrs.org">OpenMRS</a>
-            (Identity Systems Manager, primarily 2012-2014, though I'm still a
-            volunteer!)
-        </li>
-    </ul>
+  Previously
 
+  - [GROUPER Lab](https://engineering.purdue.edu/GrouperLab), Purdue University (Undergraduate Researcher)
+  - [Indiana Space Grant Consortium](https://engineering.purdue.edu/INSGC/), Purdue University / NASA (Research Intern)
+  - [OpenMRS](https://www.openmrs.org) (Identity Systems Manager, 2012-2014)
+  </t>
 </section>
 
 <section>
